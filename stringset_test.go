@@ -95,3 +95,11 @@ func TestConvertionToString(t *testing.T) {
 		}
 	}
 }
+
+func ExampleStringSet_Add() {
+	ss := New("foo", "bar")
+	ss.Add("foo")
+	fmt.Println(ss)
+
+	// Output: ["bar", "foo"]
+}
